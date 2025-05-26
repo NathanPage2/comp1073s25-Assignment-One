@@ -1,0 +1,85 @@
+/*Done by Nathan Page (200609542)
+May 26 2025
+Validated and gave no errors
+ */
+h1{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 30px;
+/*Setting a nice size and font for the h1 */
+}
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    /*Setting the font to be bold, making it larger and giving a nice font */
+}
+body{
+    display: grid;
+    background-color: lightgrey;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: 
+  "intro intro intro intro intro"
+  "Button1 Button2 Button3 Button4 Button5"
+  "Randback Randback Randback Randback Randback"
+  "placeholder placeholder placeholder placeholder placeholder";
+  padding: 10px;
+  /*Displaying grid, giving the whole site a background color, telling it to repeat the same sizes for each column. setting all the areas
+  so I can make the buttons show on one row and setting the rest to take up the whole column and padding to add space */
+}
+/*JUST GOING TO MAKE A BIG COMMENT HERE ON WHAT I DID BECAUSE THE GRID AREAS FOLLOW THE SAME LOGIC
+ALL WE ARE DOING HERE IS SAYING THAT THIS SECTION SHOULD FOLLOW THE AREA WE DECLARED IN GRID TEMPLATE */
+.intro {
+    grid-area: intro;
+}
+.Button1{
+    grid-area: Button1;
+}
+.Button2{
+    grid-area: Button2;
+}
+.Button3{
+    grid-area: Button3;
+}
+.Button4{
+    grid-area: Button4;
+}
+.Button5{
+    grid-area: Button5;
+}
+.Randback{
+    grid-area: Randback;
+}
+.placeholder{
+    grid-area: placeholder;
+}
+/*BIG COMMENT HERE AS WELL
+WE ARE GRABBING THE BUTTONS WITH THE SAME LOGIC AS JAVA EARLIER AND JUST GIVING IT COLORS
+I TRIED TO REPLICATE WHAT THE TOY LOOKED LIKE WITH THE BUTTONS */
+.Button1 > button {
+    color: purple;
+    background-color: aliceblue;
+}
+.Button2 > button {
+    color: lightblue;
+    background-color: aliceblue;
+}
+.Button3 > button {
+    color: green;
+    background-color: aliceblue;
+}
+.Button4 > button {
+    color: orange;
+    background-color: aliceblue;
+}
+.Button5 > button {
+    color: pink;
+    background-color: aliceblue;
+}
+.Randback > button:first-of-type {
+    color:red;
+    background-color: aliceblue;
+}
+.Randback > button:nth-of-type(2){
+    color: mediumseagreen;
+    background-color: aliceblue;
+}
